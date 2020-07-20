@@ -217,3 +217,146 @@ header .navbar ul li a.active::before{
 }
 /*     **********************************************************************************************************************************************                                                   STYLE SECTION ABOUT SMART
 ***************************************************************************************************************************************++++*/
+
+.about-smart{
+    padding: 100px 15px;
+    background: white;
+
+
+
+}
+
+.text-uppercase{
+    text-transform: uppercase!important;
+
+}
+
+.about-smart .section-title p.small{
+    display: block;
+    font-size: 14px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+
+}
+
+
+
+.about-smart .about-content .img{
+    max-width: 33.33%;
+    height: auto;
+    position: relative;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+/*
+.about-smart .about-content .img:before{
+   content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+
+
+}
+*/
+.about-smart .about-content .img .texto-encima{
+
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 98%;
+    height: 100%;
+    border: 1px solid #04948c;
+    color: black;
+}
+
+
+
+.about-smart .about-content .img .texto-encima h3{
+    margin-top: 200px;
+    font-size: 37px;
+    text-align:center;
+}
+
+.about-smart .about-content .img img{
+    width: 100%;
+    height: 100%
+}
+
+.about-smart .about-content .text{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+    height: auto;
+
+
+}
+
+.about-smart .about-content .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: black;
+}
+.about-smart .about-content .text h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    color: black;
+}
+.about-smart .about-content .text h6 span{
+   color: #04948c ;
+}
+.about-smart .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 20px;
+
+}
+
+.resumen_ejecutivo{
+
+    width: 100%;
+
+
+}
+.mision-vision{
+    margin-top: 18px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.mision-smart{
+     width: 50%;
+    height: auto;
+
+}
+
+
+
+.vision-smart{
+     width: 50%;
+    height: auto;
+
+}
+
+.mision-smart h4 , .vision-smart h4{
+     text-align: center;
+}
+
+.mision-smart p , .vision-smart p{
+     font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+}
