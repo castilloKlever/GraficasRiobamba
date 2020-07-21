@@ -522,6 +522,115 @@ header .navbar ul li a.active::before{
 
 }
 
+/*     **********************************************************************************************************************************************                                                   STYLE SECTION PORTAFOLIO WORKS SMART
+***************************************************************************************************************************************++++*/
+.portafolio{
+        background: #f5f8fd;
+    padding: 100px 7px;
+}
+.portafolio .section-title h1:before{
+    left: 30%;
+
+}
+
+/* Main */
+
+
+.botones-work{
+  overflow: hidden;
+}
+
+
+
+
+.botones-work li{
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 45px;
+  padding: 6px 12px;
+  border: 1px solid #4cac53;
+  list-style: none;
+  color: #4cac53;
+}
+
+.botones-work li:hover{
+  background: #4cac53;
+  color:#fff;
+  cursor: pointer;
+}
+
+.botones-work .active{
+  background: #4cac53;
+  color:#fff;
+}
+
+.galeria-work{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cont-work{
+  margin:5px;
+  padding: 1em;
+  width: 31%;
+
+  overflow: hidden;
+  height:350px;
+
+}
+.img-proyecto{
+
+    width: 100%;
+    height:185px;
+
+
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+.img-proyecto img{
+  width: 100%;
+  height:100%;
+
+}
+
+.titulo-work{
+    width: 100%;
+    height:70px;
+    overflow: hidden;
+}
+.titulo-work h4{
+    text-align:justify;
+
+
+
+}
+
+.textos-work{
+
+  margin-top: 0px;
+   width: 100%;
+    height:30px;
+
+
+}
+
+.boton{
+    width: 100%;
+    height:45px;
+
+
+}
+
+.textos-work h4{
+
+  line-height: 30px;
+  font-weight: 300px;
+}
+
+
 
 
 
