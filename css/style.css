@@ -360,3 +360,168 @@ header .navbar ul li a.active::before{
     line-height: 24px;
     color: #838383;
 }
+
+
+
+
+
+
+
+/**********************************************************************************************************************************************                                                   STYLE SECTION SERVICES SMART
+***************************************************************************************************************************************++++*/
+.services{
+    background: #f5f8fd;
+    padding: 100px 0px 70px;
+
+}
+
+.services .section-title h1:before{
+    left: 30%;
+
+}
+
+.services .service-content {
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.services .service-content .boxService{
+    width: 100%;
+    height: auto;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    background-image: url(../img/img-fondos/fondo1.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.services .service-content .boxService .imagenService{
+    width: 49%;
+    height: 250px;
+
+
+    text-align:center;
+     padding-top: 20px;
+}
+
+.services .service-content .boxService .imagenService .imgService{
+    width: 60%;
+    height: 90%;
+
+     margin:0px auto;
+
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+}
+
+.services .service-content .boxService .imagenService .imgService  img {
+
+    height: 100%;
+    width: 100%;
+}
+
+.services .service-content .boxService .imagenService img{
+    width: 100%;
+    height: 100%;
+
+}
+.services .service-content .boxService .infoSerivice{
+    width: 49%;
+    height: 100%;
+    padding: 50px;
+
+    text-align: center;
+
+}
+
+.services .service-content .boxService .infoSerivice h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+
+
+}
+
+.services .service-content .boxService .infoSerivice p{
+     font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+
+}
+
+
+
+.services .service-content .box{
+    background: #ffffff;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width:calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee ;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+
+}
+.services .service-content .box::before{
+    content: '';
+    height: 2px;
+    background-color: #04948c;
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease ;
+
+}
+.services .service-content .box:hover::before{
+    width: 100%;
+
+}
+.services .service-content .box .icon{
+    height: 60px;
+    width: 60px;
+    margin: 15px auto 20px;
+}
+
+.services .service-content .box h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+
+
+}
+
+.services .service-content .box p{
+     font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+
+}
+
+/*
