@@ -631,6 +631,269 @@ header .navbar ul li a.active::before{
 }
 
 
+/* footer*/
+
+
+.footer{
+
+
+    padding: 100px 0px 70px;
+
+    }
+
+.footer  .contact-content{
+
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    }
+
+.contact-content .info-contact{
+        width: 49%;
+        height: 400px;
+
+
+
+    }
+.contact-content .info-contact .content-info {
+
+
+    width: 100%;
+    height: 49%;
+
+
+
+
+}
+
+.contact-content .info-contact .info{
+
+     width: 100%;
+    height: 49%;
+
+
+}
+
+.contact-content .info-contact .info h5{
+      font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+
+
+
+}
+
+.contact-content .info-contact .info p{
+     font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.contact-content .info-contact .telefonos{
+    margin-top: 5px;
+    width: 100%;
+    height: 49%;
+
+
+
+}
+
+.contact-content .info-contact .telefonos  .telefono, .correo{
+
+    width: 60%;
+    height: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.icon {
+   margin-top: 5px;
+     width: 30px;
+    height: 30px;
+
+    margin-left: 25px;
+
+
+
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+
+     position: relative;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+}
+
+.icon  img{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+.text{
+    width: 80%;
+    height: 100%;
+
+}
+
+.text p {
+    float: left;
+     font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+
+}
+
+.contact-content .info-contact .Redes-Sociales{
+     margin-top:   10px;
+    width: 100%;
+    height: 49%;
+
+
+}
+
+
+
+
+.contact-content .info-contact .Redes-Sociales h5{
+   padding-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+
+
+
+}
+
+.contact-content .info-contact  .Redes-Sociales .contenedor-social {
+
+padding-left: 15px;
+  width: 60%;
+  height: 60px;
+
+
+      display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+.contact-content .info-contact  .Redes-Sociales .contenedor-social .icon-social{
+    width: 60px;
+    height: 60px;
+
+         margin-left: 10px;
+
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    position: relative;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+
+}
+
+.contact-content .info-contact  .Redes-Sociales .contenedor-social .icon-social img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-content .formulario-contact{
+
+         width: 49%;
+        height: 50%;
+
+    }
+
+
+
+
+/* formulario */
+contenedor-mensaje{
+    width: 100%;
+    height: auto;
+       float: left;
+       font-family: monospace;
+}
+form{
+    width: 100%;
+    margin: auto;
+
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.text-contactos{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+input ,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    background: #f5f8fd;
+    color: black;
+}
+
+textarea{
+   max-width: 100%;
+ max-height: 50px;
+}
+
+#boton{
+    width: 50%;
+    margin-left:50%;
+
+
+}
+#boton:hover{
+    cursor: pointer;
+}
+
+
 
 
 
