@@ -9,6 +9,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 nav{
 
   width: 100%;
@@ -19,7 +20,7 @@ nav{
 
 .nav1{
 
-background: transparent;
+background:transparent;
     width: 100%;
   height: 100px;
   color:black;
@@ -33,7 +34,6 @@ background: transparent;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
     z-index: 100;
 }
-
  .section-title{
 
     flex: 0 0 100%;
@@ -84,7 +84,8 @@ background: transparent;
 /*     **********************************************************************************************************************************************                                                   STYLE HEADER SMART
 ***************************************************************************************************************************************++++*/
 .logo, .logo img{ ;
-
+  width: 80px;
+   height:  80px;
 }
 .row{
     display: flex;
@@ -98,13 +99,14 @@ header{
     position: absolute;
     left: 0px;
     right: 0px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
-    padding: 0px 15px;
+
+
     z-index: 10;
 }
 header .row{
     justify-content:space-between;
     align-items: center;
+
 }
 header .smart-name a{
     text-decoration: none;
@@ -127,7 +129,7 @@ header .navbar ul li a{
     font-size: 15px;
     text-decoration: none;
     line-height: 72px;
-     color: black;
+    color: black;
     display: block;
     font-weight: 600;
     position: relative;
@@ -135,7 +137,7 @@ header .navbar ul li a{
 header .navbar ul li a::before{
     content: '';
     height: 3px;
-    background-color:black;
+    background-color: black;
     width: 0%;
     position: absolute;
     left: 0px;
@@ -162,7 +164,7 @@ header .navbar ul li a.active::before{
     height:600px;
     background-attachment: fixed;
     position: relative;
-      color: black;
+     color: white;
 }
 /*
 .home:before{
@@ -206,7 +208,7 @@ header .navbar ul li a.active::before{
 }
 .home .home-content .block h1{
     color: black;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -223,7 +225,7 @@ header .navbar ul li a.active::before{
 }
 .home .home-content .block .cv-btn a{
     border-radius: 4px;
-     color: black;
+    color: black;
     border: 1px solid black;
     padding: 12px 25px;
     text-decoration: none;
