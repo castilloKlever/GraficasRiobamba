@@ -5,14 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-}
+
 /* star css login */
 
 .loging{
     min-height: 100vh;
-    background-image: url(../img/img-admin/fondo1.jpg);
+    background-image: url(../img/img-admin/fondo3.jpg);
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -167,6 +165,281 @@ textarea{
 }
 
 /* end css login */
+
+
+
+/* star css administra productos  */
+
+
+
+.Gestion-Empresa{
+
+    min-height: 100vh;
+    background-color: #e4e4e4;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height:500px;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+}
+.Gestion-Empresa .menu{
+
+    width: 30%;
+    height: 100%;
+    background:#37a0b6;
+}
+
+
+.Gestion-Empresa .menu .user{
+   width: 100%;
+    height: 75px;
+
+    background-color:#e4e4e4;
+
+
+}
+.Gestion-Empresa .menu .user .titulo-user{
+    width: 100%;
+    height: 100%;
+
+
+    padding: 1%;
+    padding-left: 2%;
+
+}
+.Gestion-Empresa .menu .user h1{
+     color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+
+
+}
+
+.Gestion-Empresa .menu .user h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+
+
+
+}
+.Gestion-Empresa .menu  .menu-gestion{
+    width: 100%;
+    height: auto;
+
+}
+.Gestion-Empresa .menu  .menu-gestion .vista-previa, .gestionar-producto{
+    margin-top: 10px;
+    width: 100%;
+    height: 75px;
+
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.Gestion-Empresa .menu  .menu-gestion .vista-previa .icon, .gestionar-producto .icon{
+
+
+
+     width: 80px;
+    height: 70px;
+
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+      margin:0px auto;
+    padding: 3%;
+
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+}
+
+.Gestion-Empresa .menu  .menu-gestion .vista-previa .icon img, .gestionar-producto .icon img{
+
+    width: 100%;
+    height: 100%;
+
+}
+.Gestion-Empresa .menu  .menu-gestion .vista-previa .boton, .gestionar-producto .boton{
+    width: 50%;
+    height: 100%;
+
+    margin-right: 80px;
+
+
+}
+.Gestion-Empresa .container{
+
+    width: 70%;
+    height: 100%;
+
+}
+
+.Gestion-Empresa .container .container-sesion{
+    width: 100%;
+    height: 75px;
+   background-image: url(../img/img-admin/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.Gestion-Empresa .container .container-sesion .sesion{
+    width: auto;
+       height: 75px;
+
+    float: right;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.Gestion-Empresa .container .container-sesion .sesion .boton-sesion{
+    margin-left: 150px;
+    width: 50%;
+    height: 75px;
+
+
+}
+
+
+
+
+.Gestion-Empresa .container .container-sesion .sesion{
+
+    width: 50%;
+    height: 75px ;
+    background-color: transparent;
+    text-align: center;
+
+
+}
+.Gestion-Empresa .container .container-sesion .sesion .container-icon{
+    width: auto;
+    height: 100%;
+
+    padding: 1%;
+
+}
+.Gestion-Empresa .container .container-sesion .sesion .container-icon .icon-sesion{
+
+    width: 60px;
+    height: 60px;
+
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+      margin:0px auto;
+    background-color: white;
+
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+    float: right;
+}
+
+.Gestion-Empresa .container .container-sesion .sesion .container-icon .icon-sesion img{
+    width: 100%;
+    height: 100%;
+}
+
+
+ .btn-cerrar-sesion{
+    margin-top: 20px;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	color: #fff;
+	background-color: transparent;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+     margin-left: 95px;
+}
+.btn-vista-Previa, .btn-gestionar-producto{
+   margin-top: 20px;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	color: #fff;
+	background:#37a0b6;
+	border-radius: 3px;
+
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.btn-cerrar-sesion:hover {
+    	border: none;
+	background-color: transparent;
+    transform : scale(1.2);
+        -moz-transform : scale(1.2);      /* Firefox */
+        -webkit-transform : scale(1.2);   /* Chrome - Safari */
+        -o-transform : scale(1.2);        /* Opera */
+
+}
+
+
+.btn-vista-Previa:hover {
+   border-bottom: 1px solid black;
+	background-color: transparent;
+    transform : scale(1.2);
+        -moz-transform : scale(1.2);      /* Firefox */
+        -webkit-transform : scale(1.2);   /* Chrome - Safari */
+        -o-transform : scale(1.2);        /* Opera */
+
+}
+
+
+
+.btn-gestionar-producto:hover {
+     border-bottom: 1px solid black;
+background-color: transparent;
+    transform : scale(1.2);
+        -moz-transform : scale(1.2);      /* Firefox */
+        -webkit-transform : scale(1.2);   /* Chrome - Safari */
+        -o-transform : scale(1.2);        /* Opera */
+
+}
+
+
+
+/*star css container-master */
+.container .container-master{
+
+    width: 956px;
+    height: 592px;
+    background-color: red;
+}
+
 
 
 
