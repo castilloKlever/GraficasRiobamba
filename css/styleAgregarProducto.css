@@ -1,5 +1,15 @@
 
-
+#categorias{
+    margin-top: 10px;
+     border: none;
+    background: transparent;
+    float: right;
+    margin-right: 230px;
+}
+#cat{
+  width: auto;
+    float: left;
+}
 
 
 
