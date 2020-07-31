@@ -23,6 +23,7 @@
                                 <input type="text" name="contraseña" placeholder="contraseña">
                                 <a href="admin.html">
                                 <input href="admin.html" type="button"  value="Iniciar Sesión" id="boton"  >
+
                                 </a>
                              </form>
                       </div>
@@ -30,5 +31,24 @@
          </div>
   </section>
   <!--End Login -->
+  	<script type="text/javascript">
+function validate() {
+    if (document.f.username.value == "" && document.f.password.value == "") {
+        alert("Username and password are required");
+        document.f.username.focus();
+        return false;
+    }
+    if (document.f.username.value == "") {
+        alert("Username is required");
+        document.f.username.focus();
+        return false;
+    }
+    if (document.f.password.value == "") {
+	alert("Password is required");
+	document.f.password.focus();
+        return false;
+    }
+}
+</script>
 </body>
 </html>

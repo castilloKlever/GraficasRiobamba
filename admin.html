@@ -5,6 +5,7 @@
     <title>ADMINISTRADOR</title>
     <link rel="stylesheet" href="css/styleAdmin.css">
     <link rel="stylesheet" href="css/styleAgregarProducto.css">
+    <link rel="stylesheet" href="css/styleCrud.css">
 </head>
 <body>
    <!--Start Cantainers-->
@@ -161,51 +162,99 @@
                   <div class="container-tabla">
                      <div class="tabla">
                         <table >
+                          <thead>
                            <tr>
-                              <th>Código</th>
-                              <th>Categoría </th>
+
                               <th>Nombre </th>
+                              <th>Categoría </th>
                               <th>Descripción</th>
                               <th>Cantidad</th>
                               <th>Precio</th>
                               <th>Imagen</th>
+                                 <div sec:authorize="isAuthenticated()">
+                                            <th>VER</th>
+                                            <th>EDITAR</th>
+                                            <th>ELIMINAR</th>
+                                 </div>
+
 
                            </tr>
+                        </thead>
 
-                           <tr>
-                              <td>3458</td>
-                              <td>Papelera</td>
-                              <td>Cuaderno</td>
-                              <td>100 hojas a cuadros</td>
-                              <td>2</td>
-                              <td>1</td>
-                              <td>Imagen</td>
+                         <tbody>
+                                    <tr th:each="producto : ${products}">
+                                        <td th:text="${producto.nombre}"> </td>
+                                        <td th:text="${producto.categoria}"> </td>
+                                        <td th:text="${producto.descripcion}"> </td>
+                                        <td th:text="${producto.cantidad}"> </td>
+                                        <td th:text="${producto.precio}"> </td>
+                                        <td><img th:src="@{/pic/{id}(id=${receta.foto}+.jpg)}" width="80" class="rounded"></td>
+                                        <td>
+                                        <!-- STAR MODEL VIEW PRODUCT-->
 
-                           </tr>
-                           <tr>
-                              <td>3458</td>
-                              <td>Papelera</td>
-                              <td>Cuaderno</td>
-                              <td>100 hojas a cuadros</td>
-                              <td>2</td>
-                              <td>1</td>
-                              <td>Imagen</td>
+                                         <a  th:attr="data-target='#modalLong'+${producto.codigo}" id="btn-view-producto" class="btn-view-producto"> <img src="img/img-iconCrud/view.png" alt=""></a>
 
-                           </tr>
-                           <tr>
-                              <td>3458</td>
-                              <td>Papelera</td>
-                              <td>Cuaderno</td>
-                              <td>100 hojas a cuadros</td>
-                              <td>2</td>
-                              <td>1</td>
-                              <td>Imagen</td>
+                                         <div class="modal fade" th:id="modalLong+${producto.codigo}" tabindex="-1" role="dialog" aria-labelledby="detalleReceta" aria-hidden="true">
+  										 	<div class="modal-dialog" role="document">
+  										 	   <!-- STAR POPUD VIEW PRODUCT-->
+                                                 <div class="overlay1" id="overlay1">
+                                                        <div class="popup1" id="popup21">
+                                                            <a href="#" id="btn-cerrar-popup1" class="btn-cerrar-popup1">
+                                                            <img src="img/img-admin/close.ico" alt="">
+                                                            </a>
+                                                            <h3 >DETALLES DEL PRODUCTO</h3>
+                                                                   <div class="modal-body">
+                                                                        <h4 th:text="${receta.nombre}"> </h4>
+                                                                        <h4 th:text="${receta.categoria}"> </h4>
+                                                                        <h4 th:text="${receta.descripcion}"> </h4>
+                                                                        <h4 th:text="${receta.cantidad}"> </h4>
+                                                                        <h4 th:text="${receta.precio}"> </h4>
+                                                                        <h4 th:text="${receta.nombre}"> </h4>
+                                                                        <p><img th:src="@{/pic/{id}(id=${producto.foto}+.jpg)}" width="240" class="rounded"></p>
+                                                                        <p class="text-dark" data-th-utext="${#strings.replace(#strings.escapeXml(receta.preparacion),'&#10;','&lt;br&gt;')}"> </p>
+                                                                    </div>
 
-                           </tr>
+                                                        </div>
+                                                     </div>
+                                                     <!-- END  POPUD VIEW PRODUCT-->
 
 
 
 
+
+
+  											   </div>
+										 </div>
+                                        </td>
+
+                                        <div sec:authorize="isAuthenticated()">
+                                        <td><a th:href="@{/recetas/edit/{id}(id=${receta.id})}" class="btn btn-primary"><i class="fas fa-edit ml-2"></i></a></td>
+
+                                        <td><a data-toggle="modal" data-target="#modal-warning" th:attr="data-target='#modal-warning'+${receta.id }" class="btn btn-primary">
+                                            <i class="fas fa-trash-alt ml-2"> </i></a>
+                                            <div class="modal modal-warning fade in" th:id="modal-warning+${receta.id}" >
+    											<div class="modal-dialog">
+        											<div class="modal-content">
+            											<div class="modal-header">
+                										<h5 class="modal-title text-dark">¿Borrar esta receta?</h5>
+                										<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                										<span aria-hidden="true">&times;</span></button>
+            											</div>
+            											<div class="modal-body">
+                											<h3 class="text-dark" th:text="${receta.nombre}"></h3>
+            											</div>
+            											<div class="modal-footer">
+                										<button type="button" class="btn btn-outline pull-left" data-dismiss="modal">No</button>
+                										<a type="button" class="btn btn-outline" th:href="@{/recetas/delete/{id}(id=${receta.id})}">
+                											<i class="fa fa-check"> </i>&nbsp;Sí</a>
+            											</div>
+        											</div>
+    											</div>
+											</div>
+                                        </td>
+                                        </div>
+                                    </tr>
+                                </tbody>
                         </table>
 
                      </div>
@@ -229,5 +278,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/mainAdmin.js"></script>
     <script src="js/agregarProducto.js"></script>
+    <script src="js/crud.js"></script>
 </body>
 </html>
