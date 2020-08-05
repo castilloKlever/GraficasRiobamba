@@ -377,7 +377,7 @@
                                <div class="telefonos">
                                   <div class="telefono">
                                      <div class="icon">
-                                         <img src="img/img-icon/telefono.png" alt="">
+                                         <img src="/img/img-icon/telefono.png" alt="">
                                      </div>
 
                                      <div class="text">
@@ -387,7 +387,7 @@
                                   </div>
                                   <div class="correo">
                                        <div class="icon">
-                                         <img src="img/img-icon/email.png" alt="">
+                                         <img src="/img/img-icon/email.png" alt="">
                                        </div>
 
                                      <div class="text">
@@ -396,10 +396,11 @@
                                   </div>
                                   <div class="ubicacion">
                                        <div class="icon">
-                                         <img src="img/img-icon/ubicacion.png" alt="">
+                                         <img src="/img/img-icon/ubicacion.png" alt="">
                                          </div>
                                          <div class="text">
-                                         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D-1.6743%252C-78.6483%26fbclid%3DIwAR1EMhxPC1fwPcGLjx0W_GEsk88mC8likK-JvI4K6KPR0Fm9ltmrp29lmXg&h=AT0UpYK9nTrltiG1MKuyykrFo7tclfVA5FECfGDa4eLh9l9LXFGKJEwfXoMNrixuEwGsaF0dB-Iq5Qp4kh_s8IRxVHPu4OPwze698CYgALzJZc72yalEtaZazd6wB5n6YEYiiw" target="_blank"><pd> Veloz 45-08 entre Av. De la Prensa y Baltazar Paredes</pd></a>
+                                        <p> Veloz 45-08 entre Av. De la Prensa y Baltazar Paredes </p>
+
                                          </div>
                                   </div>
                                </div>
@@ -410,10 +411,10 @@
                                <h5> Tambien en nuestras Redes Sociales  </h5>
                                <div class="contenedor-social">
                                       <div class="icon-social">
-                                          <a title="Facebook" href="https://www.facebook.com/graficasriobamba" target="_blank"><img src="img/img-icon/icon2.png" alt="Facebook"></a>
+                                          <a title="Facebook" href="https://www.facebook.com/profile.php?id=100009600577991" target="_blank"><img src="/img/img-icon/icon2.png" alt="Facebook"></a>
                                       </div>
                                       <div class="icon-social">
-                                          <a title="Whatsapp" href="https://api.whatsapp.com/send?phone=593997665258" target="_blank"><img src="img/img-icon/whatsapp.png" alt="Whatsapp"></a>
+                                          <a title="Whatsapp" href="https://api.whatsapp.com/send?phone=593997665258" target="_blank"><img src="/img/img-icon/whatsapp.png" alt="Whatsapp"></a>
                                       </div>
 
 
@@ -429,18 +430,54 @@
 
                        <div class="formulario-contact">
 
-                                       <div class="contenedor-mensaje">
-                                                <form action="">
-                                                    <h2 class="text-contactos">Envíanos tu requerimiento.</h2>
-                                                   <input type="text" name="Nombre" placeholder="Nombre">
-                                                   <input type="text" name="Correo" placeholder="Correo">
-                                                   <input type="text" name="telefono" placeholder="Telefono">
-                                                   <textarea name="mensaje"     placeholder="Escriba aqui su mensaje " ></textarea>
-                                                    <input type="button"  value="ENVIAR" id="boton">
+
+                                          <div class="contenedor-mensaje">
+                                                <form  th:action="@{/GraficasRiobamba/saveMensaje}" th:object="${mensaje}"  method="post">
+                                                   <input th:field="*{nombreCliente}" type="text" name="Nombre" placeholder="Nombre">
+                                                   <input th:field="*{correoCliente}" type="text" name="Correo" placeholder="Correo">
+                                                   <input th:field="*{telefonoCliente}" type="text" name="telefono" placeholder="Telefono">
+                                                   <textarea th:field="*{contenido}"  name="mensaje"     placeholder="Escriba aqui su mensaje " > </textarea>
+
+
+														<div class="overlay"   id="overlay">
+												                        <div class="popup" id="popup">
+												                            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"> </a>
+												                            <h1 >DESEA ENVIAR ESTE MESAJE </h1>
+												                            <h2>GRAFICAS RIOBAMBA ANTENDERA SUS SOLICITUD..</h2>
+
+                                                                                 <div class="cont-botones">
+     <div class="salir" >
+          <a href="/GraficasRiobamba/index">
+             <input     value="SALIR" class="botonm" style="cursor: pointer;" >
+          </a>
+     </div>
+     <div class="enviar">
+         <input  type="submit"   value="ENVIAR" class="botonm" style="cursor: pointer;" >
+     </div>
+ </div>
+												                        </div>
+												                 </div>
+
+
+
+
+
+
                                                 </form>
+                                                  <button id="btn-abrir-popup" class="btn-abrir-popup">Enviar Mensaje</button>
+
+
+
+
+
+
                                        </div>
 
                        </div>
+
+
+
+
 
                  </div>
 
@@ -449,6 +486,7 @@
       </div>
 
   </footer>
+
 
 
    <!-- End footer -->
